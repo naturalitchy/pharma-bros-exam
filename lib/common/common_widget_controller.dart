@@ -119,8 +119,8 @@ class CommonWidgetController extends GetxController {
           },
           currentIndex: currentIndex,
           items: [
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+            BottomNavigationBarItem(
+              icon: currentIndex == 0 ? const Icon(Icons.home) : const Icon(Icons.home_outlined),
               label: '홈',
             ),
             BottomNavigationBarItem(
